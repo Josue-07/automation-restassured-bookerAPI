@@ -1,7 +1,7 @@
 package tests.booker;
 
 import core.BaseRequestSpecification;
-import entities.NewBooking;
+import entities.PayLoads;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -17,7 +17,7 @@ public class CreateBooking extends BaseRequestSpecification {
     public void listarIDsDeBooking() {
 
                 given()
-                    .body(NewBooking.criarNovoLivro())
+                    .body(PayLoads.criarNewBooking())
                     .pathParams("recurso", RESOURCE_BOOKER_ID)
                 .when()
                     .post("/{recurso}")

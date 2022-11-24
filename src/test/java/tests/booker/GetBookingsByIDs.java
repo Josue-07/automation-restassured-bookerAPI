@@ -15,7 +15,7 @@ public class GetBookingsByIDs extends BaseRequestSpecification {
                 given()
                         .pathParams("recurso","booking")
                 .when()
-                    .get("/{recurso}/72510")
+                    .get("/{recurso}/3062")
                 .then()
                     .statusCode(HttpStatus.SC_OK)
                 ;
