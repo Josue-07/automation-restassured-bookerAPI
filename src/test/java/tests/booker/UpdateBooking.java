@@ -6,6 +6,7 @@ import io.restassured.RestAssured;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import utils.IDBooking;
 
 public class UpdateBooking extends BaseRequestSpecification {
 
@@ -17,7 +18,7 @@ public class UpdateBooking extends BaseRequestSpecification {
                 //.auth().preemptive().basic("admin","password123")
                 .body(PayLoads.atualizarBooking())
                 .when()
-                .put("/booking/3062")
+                .put("/booking/"+ IDBooking.getIDBooking())
                 .then()
                 .statusCode(HttpStatus.SC_OK);
     }

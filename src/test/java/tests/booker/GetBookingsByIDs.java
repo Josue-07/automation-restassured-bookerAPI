@@ -4,6 +4,7 @@ import core.BaseRequestSpecification;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import utils.IDBooking;
 
 import static io.restassured.RestAssured.given;
 
@@ -15,9 +16,9 @@ public class GetBookingsByIDs extends BaseRequestSpecification {
                 given()
                         .pathParams("recurso","booking")
                 .when()
-                    .get("/{recurso}/3062")
+                    .get("/{recurso}/"+ IDBooking.getIDBooking())
                 .then()
-                    .statusCode(HttpStatus.SC_OK)
-                ;
+                    .statusCode(HttpStatus.SC_OK);
+
     }
 }
