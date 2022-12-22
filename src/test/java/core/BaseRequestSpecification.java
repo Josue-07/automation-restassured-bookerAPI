@@ -3,7 +3,6 @@ package core;
 import io.restassured.authentication.PreemptiveBasicAuthScheme;
 import io.restassured.builder.*;
 import io.restassured.filter.log.LogDetail;
-import io.restassured.http.ContentType;
 import io.restassured.specification.*;
 import org.junit.jupiter.api.*;
 
@@ -14,9 +13,9 @@ import static org.hamcrest.Matchers.lessThan;
 
 public class BaseRequestSpecification implements Constantes {
 
+    private static PreemptiveBasicAuthScheme authScheme = new PreemptiveBasicAuthScheme();
     private static RequestSpecification reqSpec;
     private static ResponseSpecification respSpec;
-    private static PreemptiveBasicAuthScheme authScheme = new PreemptiveBasicAuthScheme();
 
     @BeforeAll
     public static void setup(){
@@ -26,7 +25,7 @@ public class BaseRequestSpecification implements Constantes {
 
         reqSpec = new RequestSpecBuilder()
                 .log(LogDetail.ALL)
-                .setContentType(ContentType.JSON)
+                .setContentType(CONTENT_TYPE)
                 .setAccept("application/json")
                 .build();
 
@@ -37,7 +36,6 @@ public class BaseRequestSpecification implements Constantes {
 
         requestSpecification = reqSpec;
         responseSpecification = respSpec;
-
     }
     @BeforeEach
     public void setAuth(){

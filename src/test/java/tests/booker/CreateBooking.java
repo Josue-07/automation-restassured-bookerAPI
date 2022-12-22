@@ -7,7 +7,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-
 public class CreateBooking extends BaseRequestSpecification {
 
     private final String RESOURCE_BOOKER_ID = "booking";

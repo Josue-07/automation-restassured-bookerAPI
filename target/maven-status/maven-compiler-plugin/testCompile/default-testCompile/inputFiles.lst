@@ -1,0 +1,15 @@
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\core\Constantes.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\tests\contracts\GetBookingByIDContract.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\tests\contracts\UpdateBookingContract.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\tests\contracts\CreateBookingContract.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\entities\PayLoads.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\execucao\RunnerTest.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\tests\booker\GetBookingsByIDs.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\tests\booker\CreateToken.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\tests\booker\CreateBooking.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\tests\contracts\GetBookingIDContract.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\tests\booker\GetBookingIDs.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\utils\IDBooking.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\tests\booker\DeleteBooking.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\core\BaseRequestSpecification.java
+C:\Users\josue\automaçãoApi\automacao-restfull-booker\src\test\java\tests\booker\UpdateBooking.java
