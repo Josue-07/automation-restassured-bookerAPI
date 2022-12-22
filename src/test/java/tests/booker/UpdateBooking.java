@@ -18,7 +18,7 @@ public class UpdateBooking extends BaseRequestSpecification {
                 //.auth().preemptive().basic("admin","password123")
                 .body(PayLoads.atualizarBooking())
                 .when()
-                .put("/booking/"+ IDBooking.getIDBooking())
+                .put("/booking/"+ IDBooking.id)
                 .then()
                 .statusCode(HttpStatus.SC_OK);
     }

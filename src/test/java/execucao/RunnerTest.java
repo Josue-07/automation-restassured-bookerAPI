@@ -11,5 +11,6 @@ import tests.contracts.GetBookingIDContract;
         CreateToken.class, CreateBooking.class, GetBookingIDs.class, GetBookingsByIDs.class,
         UpdateBooking.class, GetBookingIDContract.class
 })
-public class Runner {
+public class RunnerTest {
 }
+

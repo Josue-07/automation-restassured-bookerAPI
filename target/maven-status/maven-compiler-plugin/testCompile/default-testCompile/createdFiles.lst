@@ -1,0 +1,15 @@
+tests\booker\CreateBooking.class
+tests\contracts\UpdateBookingContract.class
+tests\contracts\GetBookingIDContract.class
+tests\booker\UpdateBooking.class
+tests\booker\DeleteBooking.class
+tests\contracts\CreateBookingContract.class
+tests\booker\GetBookingIDs.class
+entities\PayLoads.class
+execucao\RunnerTest.class
+core\BaseRequestSpecification.class
+tests\booker\CreateToken.class
+tests\booker\GetBookingsByIDs.class
+tests\contracts\GetBookingByIDContract.class
+core\Constantes.class
+utils\IDBooking.class

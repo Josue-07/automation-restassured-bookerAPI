@@ -15,10 +15,12 @@ public class GetBookingsByIDs extends BaseRequestSpecification {
     public void consultarBookingsPorIDs(){
                 given()
                         .pathParams("recurso","booking")
+                        .pathParams("Id",IDBooking.id)
                 .when()
-                    .get("/{recurso}/"+ IDBooking.getIDBooking())
+                    .get("/{recurso}/{Id}")
                 .then()
-                    .statusCode(HttpStatus.SC_OK);
+                    .statusCode(HttpStatus.SC_OK)
+                        ;
 
     }
 }

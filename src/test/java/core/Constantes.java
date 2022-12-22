@@ -8,5 +8,5 @@ public interface Constantes {
     Integer PORT = 443;
 
     ContentType CONTENT_TYPE = ContentType.JSON;
-    Long TIMEOUT = 8000L;
+    Long TIMEOUT = 10000L;
 }

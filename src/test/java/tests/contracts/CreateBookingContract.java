@@ -2,12 +2,9 @@ package tests.contracts;
 
 import core.BaseRequestSpecification;
 import entities.PayLoads;
-import io.restassured.RestAssured;
 import io.restassured.http.Method;
-import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

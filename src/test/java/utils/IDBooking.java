@@ -1,25 +1,27 @@
 package utils;
 
 import core.BaseRequestSpecification;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
+import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
+
 public class IDBooking extends BaseRequestSpecification {
 
-
-    public static int getIDBooking() {
-        ArrayList<Integer> ids = given()
+    public static int id = (int) getIDBooking().get(0);
+    public static ArrayList getIDBooking() {
+        ArrayList ids = given()
                 .pathParams("recurso", "booking")
                 .when()
                 .get("/{recurso}")
                 .then()
                 .statusCode(HttpStatus.SC_OK).extract().path("bookingid");
-        return ids.get(0);
+
+        return ids;
     }
+
+
+
 }
